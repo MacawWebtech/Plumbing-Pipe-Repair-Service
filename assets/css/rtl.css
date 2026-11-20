@@ -1,0 +1,6 @@
+/* RTL: the layout uses logical properties (margin-inline, inset-inline…), so only extras live here */
+[dir=rtl] body{font-family:"DM Sans","Noto Sans Arabic",system-ui,sans-serif}
+[dir=rtl] .x-marquee .track{animation-name:mq-rtl}
+@keyframes mq-rtl{to{transform:translateX(50%)}}
+[dir=rtl] .x-timeline::before{background:linear-gradient(270deg,#cc1818,#cc1818,#cc1818)}
+[dir=rtl] .hdr-call b,[dir=rtl] .tb-emg b,[dir=rtl] .h1-years b,[dir=rtl] .ft-contact a[href^="tel:"]{unicode-bidi:isolate;direction:ltr}
